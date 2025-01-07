@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Venkata Saai Praneeth Thota"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Incoming ML Engineer @ Modlee | AI Engineer @ Share Ventures | Graduate Student Researcher @ USC | Amazon ML Summer School ‘22 | IEEE Scholar"
+  bio    : "Incoming Machine Learning Engineer at Modlee, former AI Engineer at Share Ventures, Graduate Student Researcher at USC, Amazon ML Summer School 2022 participant, and IEEE Scholar."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
