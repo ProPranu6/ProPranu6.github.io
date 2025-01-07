@@ -1,12 +1,9 @@
 ---
 layout: single
-title: "Praneeth Thota Portfolio"
 author_profile: true
+classes: wide
 header:
-  overlay_image: /assets/images/mounts-rez.jpg
-  overlay_filter: 0.5
-  caption: "Harnessing AI to solve real-world challenges in health and beyond"
-excerpt: "Incoming Machine Learning Engineer at Modlee, Graduate Student Researcher at USC, and AI enthusiast committed to innovation in healthcare and social good."
+  image: /assets/images/mounts-rez.jpg
 ---
 
 Welcome to my page! I specialize in leveraging **Artificial Intelligence**, **Deep Learning**, and **Large Language Models (LLMs)** to address critical challenges in healthcare and social impact.
@@ -26,9 +23,3 @@ Welcome to my page! I specialize in leveraging **Artificial Intelligence**, **De
 - **Amazon ML Summer School 2022 Participant**
 - **IEEE Scholar**
 - **Gold Medalist and Jury Award Winner on Research Day**
-
-### Get in Touch
-Interested in collaborating or learning more? Reach out!  
-- [LinkedIn](https://linkedin.com/in/yourprofile)  
-- [GitHub](https://github.com/yourusername)  
-- [Email Me](mailto:your-email@example.com)
