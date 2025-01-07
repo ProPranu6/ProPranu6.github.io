@@ -1,31 +1,34 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: single
+title: "Praneeth Thota Portfolio"
 author_profile: true
-classes: wide
 header:
-  image: /assets/images/mounts-rez.jpg
+  overlay_image: /assets/images/mounts-rez.jpg
+  overlay_filter: 0.5
+  caption: "Harnessing AI to solve real-world challenges in health and beyond"
+excerpt: "Incoming Machine Learning Engineer at Modlee, Graduate Student Researcher at USC, and AI enthusiast committed to innovation in healthcare and social good."
 ---
-### Advancing AI for Healthcare and Social Good  
-Harnessing cutting-edge AI to solve real-world challenges in health, research, and beyond.
 
-Welcome! I specialize in leveraging **Artificial Intelligence**, **Deep Learning**, and **Large Language Models** to address critical challenges in healthcare and social impact. Explore my projects, research contributions, and professional journey as I work toward advancing innovation in AI.
+Welcome to my page! I specialize in leveraging **Artificial Intelligence**, **Deep Learning**, and **Large Language Models (LLMs)** to address critical challenges in healthcare and social impact.
 
-#### Areas of Expertise  
-- **Deep Learning for Medical Imaging:** Ocular vasculature segmentation and biomarker extraction.  
-- **AI for Social Good:** Passive digital phenotyping for PTSD and mental health analysis.  
-- **Large Language Models (LLMs):** Backend development and applications in cutting-edge NLP systems.  
-- **Time Series Analysis:** Predictive modeling for wearable device data.  
+### Areas of Expertise
+- **Medical Imaging:** Ocular vasculature segmentation with U-Net and ViT for cardiovascular biomarker extraction.
+- **AI for Mental Health:** Preprocessing pipelines for wearable data to predict PTSD events.
+- **NLP & LLMs:** Backend development for advanced natural language processing systems.
+- **Time Series Analysis:** Predictive modeling from passive digital phenotypes.
 
-#### Featured Work  
-- **Ocular Vasculature Analysis**  
-  Leveraging U-Net and Vision Transformer architectures for microvasculature segmentation to identify CVD biomarkers.  
+### Featured Work
+- **Ocular Vasculature Analysis**: Developed deep learning models for microvasculature segmentation to detect cardiovascular biomarkers.
+- **PTSD Event Prediction**: Researched time series features from wearable data for predictive mental health analysis.
+- **EEGNet for Brain-Computer Interfaces**: Designed a deep learning model achieving 83% accuracy across multi-subject datasets.
 
-- **PTSD Event Prediction**  
-  Built preprocessing pipelines and identified predictive features for PTSD events using time series data from wearable devices.  
+### Recognitions
+- **Amazon ML Summer School 2022 Participant**
+- **IEEE Scholar**
+- **Gold Medalist and Jury Award Winner on Research Day**
 
-- **EEG Classification for BCI Applications**  
-  Developed a deep learning strategy inspired by EEGNet, achieving 83% classification accuracy for multi-subject EEG datasets.  
-
+### Get in Touch
+Interested in collaborating or learning more? Reach out!  
+- [LinkedIn](https://linkedin.com/in/yourprofile)  
+- [GitHub](https://github.com/yourusername)  
+- [Email Me](mailto:your-email@example.com)
