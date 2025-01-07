@@ -4,6 +4,7 @@ author_profile: true
 classes: wide
 header:
   image: /assets/images/mounts-rez.jpg
+css: "assets/css/custom.css"
 ---
 
 Welcome to my page! I specialize in leveraging **Artificial Intelligence**, **Deep Learning**, and **Large Language Models (LLMs)** to address critical challenges in healthcare and social impact.
