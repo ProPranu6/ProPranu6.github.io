@@ -6,5 +6,6 @@ layout: single
 author_profile: true
 header:
   image: /assets/images/mounts.jpg
+  style: "height: 400px; width: auto;"
 
 ---
