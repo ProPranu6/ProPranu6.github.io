@@ -4,23 +4,22 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: single
 author_profile: true
+classes: wide
 header:
-  image: /assets/images/mounts.jpg
-  style: "height: 400px; width: auto;"
-
+  image: /assets/images/mounts-rez.jpg
 ---
-## Advancing AI for Healthcare and Social Good  
+### Advancing AI for Healthcare and Social Good  
 Harnessing cutting-edge AI to solve real-world challenges in health, research, and beyond.
 
 Welcome! I specialize in leveraging **Artificial Intelligence**, **Deep Learning**, and **Large Language Models** to address critical challenges in healthcare and social impact. Explore my projects, research contributions, and professional journey as I work toward advancing innovation in AI.
 
-### Areas of Expertise  
+#### Areas of Expertise  
 - **Deep Learning for Medical Imaging:** Ocular vasculature segmentation and biomarker extraction.  
 - **AI for Social Good:** Passive digital phenotyping for PTSD and mental health analysis.  
 - **Large Language Models (LLMs):** Backend development and applications in cutting-edge NLP systems.  
 - **Time Series Analysis:** Predictive modeling for wearable device data.  
 
-### Featured Work  
+#### Featured Work  
 - **Ocular Vasculature Analysis**  
   Leveraging U-Net and Vision Transformer architectures for microvasculature segmentation to identify CVD biomarkers.  
 
