@@ -3,7 +3,7 @@ layout: single
 author_profile: true
 classes: wide
 header:
-  image: /assets/images/mount-rec.jpg
+  image: /assets/images/mounts.jpg
 css: "assets/css/custom.css"
 ---
 Welcome to my page! I specialize in leveraging **Artificial Intelligence**, **Deep Learning**, and **Large Language Models (LLMs)** to address critical challenges in healthcare and social impact. My expertise spans across multiple domains, including **medical imaging** where I focus on ocular vasculature segmentation using **U-Net** and **Vision Transformer (ViT)** architectures for **cardiovascular biomarker extraction**. I also work on **AI for mental health**, developing preprocessing pipelines for wearable data to predict **PTSD events**. Additionally, I have experience in **NLP & LLMs**, contributing to backend development for advanced natural language processing systems, and in **time series analysis**, where I use predictive modeling to derive insights from **passive digital phenotypes**.
