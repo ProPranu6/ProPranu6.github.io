@@ -62,13 +62,13 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Incoming Machine Learning Engineer at Modlee, former AI Engineer at Share Ventures, Graduate Student Researcher at USC, Amazon ML Summer School 2022 participant, and IEEE Scholar."
   links:
-    - label: "Website"
+    - label: "Praneeth Thota"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
+      url: "https://propranu6.github.io/mm-profile"
+    - label: "Praneeth__Thota"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
+      url: "https://x.com/Praneeth__Thota"
+    - label: "ProPranu6"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ProPranu6"
     #- label: "Instagram"
@@ -77,10 +77,10 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
+    - label: "Praneeth__Thota"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
+      url: "https://x.com/Praneeth__Thota"
+    - label: "ProPranu6"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ProPranu6"
     #- label: "Instagram"
@@ -99,7 +99,7 @@ defaults:
       comments: true
       share: true
       related: true
-      css: "assets/css/custom.css"
+      css: "/assets/css/custom.css"
   # _pages
   - scope:
       path: "_pages"
@@ -107,7 +107,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      css: "assets/css/custom.css"
+      css: "/assets/css/custom.css"
 
 category_archive:
   type: liquid
