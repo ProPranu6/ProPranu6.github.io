@@ -16,44 +16,61 @@ css: "/assets/css/custom.css"
     <style>
         body {
             font-family: 'Barlow Condensed', sans-serif;
-            font-size: 21px;
+            font-size: 11px;
+            line-height: 1.5;
+            margin: 20px;
+            color: #333;
         }
         h1 {
-            font-size: 30px; /* Larger font for heading */
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
         p {
-            line-height: 1.5; /* Improved readability for smaller font size */
+            margin-bottom: 15px;
+        }
+        strong {
+            font-weight: bold;
+            color: #0056b3; /* Default highlight color */
+            text-decoration: none;
+            position: relative;
+        }
+        strong:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2px;
+            height: 2px;
+            background-color: gold; /* Hover underline color */
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to my page!</h1>
+    <h1>About Me</h1>
     <p>
-        I specialize in leveraging <strong>Artificial Intelligence</strong>, <strong>Deep Learning</strong>, 
-        and <strong>Large Language Models (LLMs)</strong> to address critical challenges in healthcare 
-        and social impact. My expertise spans across multiple domains, including <strong>medical imaging</strong> 
-        where I focus on ocular vasculature segmentation using <strong>U-Net</strong> and 
-        <strong>Vision Transformer (ViT)</strong> architectures for <strong>cardiovascular biomarker extraction</strong>.
+        I am an incoming <strong>Machine Learning Engineer</strong> at <strong>Modlee Inc.</strong>, a fast-growing startup, where I will focus on backend development and building cutting-edge large language model (LLM) and deep learning (DL) projects.
     </p>
     <p>
-        I also work on <strong>AI for mental health</strong>, developing preprocessing pipelines for wearable data 
-        to predict <strong>PTSD events</strong>. Additionally, I have experience in <strong>NLP & LLMs</strong>, 
-        contributing to backend development for advanced natural language processing systems, and in 
-        <strong>time series analysis</strong>, where I use predictive modeling to derive insights from 
-        <strong>passive digital phenotypes</strong>.
+        Currently, I am a <strong>Research Assistant</strong> at the <strong>Big Data in Biotransport Center</strong> at the <strong>University of Southern California</strong>, where I work on ocular vasculature analysis. My research involves leveraging advanced deep learning models such as U-Net, Attention U-Net, and Vision Transformer (ViT) architectures for microvasculature segmentation and biomarker extraction. This work is directed toward identifying cardiovascular disease (CVD) biomarkers and contributing to the development of novel diagnostic tools.
     </p>
     <p>
-        Throughout my career, I have contributed to several impactful projects, such as 
-        <strong>ocular vasculature analysis</strong>, where I developed deep learning models for 
-        microvasculature segmentation to detect cardiovascular biomarkers, and <strong>PTSD event prediction</strong>, 
-        where I researched time series features from wearable data for predictive mental health analysis. 
-        I also designed a deep learning model, <strong>EEGNet</strong>, achieving <strong>83% accuracy</strong> 
-        across multi-subject datasets in <strong>brain-computer interface</strong> applications.
+        Previously, I worked as a <strong>Graduate Student Researcher</strong> at the <strong>Center for Artificial Intelligence in Society (CAIS)</strong> at <strong>USC</strong>. My work at CAIS focused on constructing preprocessing pipelines for parsing, structuring, and aggregating passive digital phenotypes from wearable devices. I researched and identified predictive features for Post-Traumatic Stress Disorder (PTSD) events using time series analysis and machine learning techniques.
     </p>
     <p>
-        My work has been recognized with several accolades, including being selected as an 
-        <strong>Amazon ML Summer School 2022 participant</strong>, an <strong>IEEE Scholar</strong>, 
-        and a <strong>Gold Medalist and Jury Award Winner</strong> on Research Day.
+        For the upcoming semester, I will be serving as a <strong>grader</strong> for the <strong>Foundations of Data Management course (DSCI 551)</strong> at <strong>USC</strong>, assisting in evaluating coursework and providing feedback to students on core data management concepts.
+    </p>
+    <p>
+        Before joining <strong>USC</strong>, I was a <strong>Deep Learning Researcher</strong> at the <strong>International Center for Neuromorphic Systems</strong> at <strong>Western Sydney University</strong>, where I developed a deep learning-based EEG classification strategy inspired by EEGNet. This work achieved a per-sample classification accuracy of 83%, demonstrating its effectiveness across multiple subjects in brain-computer interface applications.
+    </p>
+    <p>
+        I am passionate about applying artificial intelligence to solve critical challenges in healthcare and for social good. My work has been recognized with multiple honors, including a <strong>Gold Medal</strong> and <strong>Jury Award</strong> on Research Day and a selection for the <strong>Amazon ML Summer School</strong>. Additionally, I have contributed to the research community with publications in reputed journals such as <strong>IEEE</strong> and remain committed to advancing AI research and technology.
     </p>
 </body>
 </html>
