@@ -16,57 +16,47 @@ css: "/assets/css/custom.css"
     <style>
         body {
             font-family: 'Barlow Condensed', sans-serif;
-            font-size: 14px;
+            font-size: 21px; /* Set base font size */
             line-height: 1.6;
             margin: 20px;
             color: #333;
         }
-        h1 {
-            font-size: 30px;
+
+        h1, h2 {
+            font-size: 30px; /* Heading font size */
             font-weight: bold;
             margin-bottom: 10px;
         }
-        h2 {
-            font-size: 26px;
-            font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
+
         p {
             margin-bottom: 15px;
         }
+
         strong {
-            font-size: 21px;
+            font-size: 26px; /* Highlighted term font size */
             font-weight: bold;
             color: #0056b3;
             text-decoration: none;
             position: relative;
             display: inline-block;
         }
-        strong::after {
+
+        strong::before {
             content: '';
             position: absolute;
+            bottom: -3px;
             left: 50%;
             width: 0;
-            bottom: -3px;
             height: 3px;
             background-color: gold;
             transition: all 0.3s ease-in-out;
             transform: translateX(-50%);
         }
-        strong:hover::after {
+
+        strong:hover::before {
             width: 100%;
-            animation: dynamicUnderline 0.6s ease forwards;
-        }
-        @keyframes dynamicUnderline {
-            0% {
-                width: 0;
-                left: 50%;
-            }
-            100% {
-                width: 100%;
-                left: 0;
-            }
+            left: 0;
+            transform: translateX(0);
         }
     </style>
 </head>
