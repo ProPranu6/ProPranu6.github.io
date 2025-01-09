@@ -1,7 +1,6 @@
 ---
 permalink: /education/
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,20 +24,35 @@ permalink: /education/
 
         .education-section {
             margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px; /* Space between logo and text */
+        }
+
+        .school-logo {
+            width: 80px; /* Adjust logo size */
+            height: auto;
+        }
+
+        .school-info {
+            flex: 1;
         }
 
         .school-name {
+            font-family: 'PT Serif', serif;
             font-weight: bold;
             font-size: 26px;
             color: #0056b3;
         }
 
         .degree {
+            font-family: 'PT Sans Narrow', sans-serif;
             font-size: 24px;
             font-weight: bold;
         }
 
         .details {
+            font-family: 'Barlow Condensed', sans-serif;
             font-size: 21px;
         }
 
@@ -61,19 +75,25 @@ permalink: /education/
     <h1>Education</h1>
     
     <div class="education-section">
-        <div class="school-name">University of Southern California, United States</div>
-        <div class="details">Aug 2023 – May 2025</div>
-        <div class="degree">Master of Science in Computer Science</div> GPA: 3.95/4.0
-        <div class="details"><strong>Coursework:</strong> <span class="coursework">Foundations of Artificial Intelligence, Machine Learning, Applied Natural Language Processing</span></div>
+        <img src="usc-logo.png" alt="USC Logo" class="school-logo">
+        <div class="school-info">
+            <div class="school-name">University of Southern California, United States</div>
+            <div class="details">Aug 2023 – May 2025</div>
+            <div class="degree">Master of Science in Computer Science</div> GPA: 3.95/4.0
+            <div class="details"><strong>Coursework:</strong> <span class="coursework">Foundations of Artificial Intelligence, Machine Learning, Applied Natural Language Processing</span></div>
+        </div>
     </div>
     
     <div class="divider"></div>
     
     <div class="education-section">
-        <div class="school-name">SRM University, India</div>
-        <div class="details">May 2019 – May 2023</div>
-        <div class="degree">Bachelor of Technology in Computer Science and Engineering</div> GPA: 9.72/10.0 - <span class="gpa-achievement">Department Gold Medalist</span>
-        <div class="details"><strong>Coursework:</strong> <span class="coursework">Artificial Intelligence & Machine Learning</span></div>
+        <img src="srm-logo.png" alt="SRM University Logo" class="school-logo">
+        <div class="school-info">
+            <div class="school-name">SRM University, India</div>
+            <div class="details">May 2019 – May 2023</div>
+            <div class="degree">Bachelor of Technology in Computer Science and Engineering</div> GPA: 9.72/10.0 - <span class="gpa-achievement">Department Gold Medalist</span>
+            <div class="details"><strong>Coursework:</strong> <span class="coursework">Artificial Intelligence & Machine Learning</span></div>
+        </div>
     </div>
 </body>
 </html>
