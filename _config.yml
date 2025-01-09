@@ -75,7 +75,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ProPranu6"
     #- label: "Venkata Saai Praneeth Thota"
-    #  icon: "fab fa-solid fa-graduation-cap" # Use a custom class for Google Scholar if supported
+    #  icon: "fab fa-fw fa-solid fa-graduation-cap" # Use a custom class for Google Scholar if supported
     #  url: "https://scholar.google.com/citations?user=ryCqp8BU1lwC&hl=en"
       
     #- label: "Instagram"
