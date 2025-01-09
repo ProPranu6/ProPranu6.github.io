@@ -60,8 +60,11 @@ plugins:
 author:
   name   : "Venkata Saai Praneeth Thota"
   avatar : "/assets/images/biopic.jpg"
-  bio    : "Incoming Machine Learning Engineer at Modlee, former AI Engineer at Share Ventures, Graduate Student Researcher at USC, Amazon ML Summer School 2022 participant, and IEEE Scholar."
+  bio    : "BTech and MSc in Computer Science with publications in IEEE journals, showcasing 4+ years of AI research experience. Proven track record of driving innovation as an AI/ML engineer at two dynamic startups."
   links:
+    - label: "Los Angeles, CA"
+      icon: "fas fa-fw fa-map-marker-alt"
+      url: "https://www.google.com/maps/?q=Los%20Angeles%2C%20California%2C%20United%20States"
     - label: "Praneeth Thota"
       icon: "fas fa-fw fa-link"
       url: "https://propranu6.github.io/mm-profile"
@@ -71,18 +74,28 @@ author:
     - label: "ProPranu6"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ProPranu6"
+    - label: "Venkata Saai Praneeth Thota"
+      icon: "fab fa-fw fa-graduation-cap" # Use a custom class for Google Scholar if supported
+      url: "https://scholar.google.com/citations?user=ryCqp8BU1lwC&hl=en"
+      
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Praneeth__Thota"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/Praneeth__Thota"
-    - label: "ProPranu6"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ProPranu6"
+    #- label: "Praneeth__Thota"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  url: "https://x.com/Praneeth__Thota"
+    #- label: "ProPranu6"
+    #  icon: "fab fa-fw fa-github"
+    #  url: "https://github.com/ProPranu6"
+    - label: "Contact Me"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:your-email@example.com"
+    - label: "Download Me"
+      icon: "fas fa-fw fa-download"
+      url: "/assets/docs/__resume__u.pdf"
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
