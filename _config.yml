@@ -74,9 +74,9 @@ author:
     - label: "ProPranu6"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ProPranu6"
-    - label: "Venkata Saai Praneeth Thota"
-      icon: "fab fa-fw fa-graduation-cap" # Use a custom class for Google Scholar if supported
-      url: "https://scholar.google.com/citations?user=ryCqp8BU1lwC&hl=en"
+    #- label: "Venkata Saai Praneeth Thota"
+    #  icon: "fab fa-solid fa-graduation-cap" # Use a custom class for Google Scholar if supported
+    #  url: "https://scholar.google.com/citations?user=ryCqp8BU1lwC&hl=en"
       
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
@@ -92,10 +92,10 @@ footer:
     #  url: "https://github.com/ProPranu6"
     - label: "Contact Me"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:your-email@example.com"
+      url: "mailto:pranuthota31@gmail.com"
     - label: "Download Me"
       icon: "fas fa-fw fa-download"
-      url: "/assets/docs/__resume__u.pdf"
+      url: "{{ site.url }}{{ site.baseurl }}/assets/docs/__resume__u.pdf"
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
