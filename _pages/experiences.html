@@ -12,7 +12,7 @@ classes: wide
         <h3 class="title">Software Engineer Intern</h3>
         <p><strong>Company Name:</strong> XYZ Corporation</p>
         <p><strong>Duration:</strong> June 2023 - Aug 2023</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
     <!-- Connector -->
@@ -23,45 +23,38 @@ classes: wide
         <h3 class="title">Research Assistant</h3>
         <p><strong>Institution:</strong> USC</p>
         <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
     <!-- Connector -->
     <div class="connector"></div>
     <!-- Add more cards and connectors as needed -->
-    <!-- Card 2 -->
     <div class="card left">
       <div class="info">
-        <h3 class="title">Research Assistant2</h3>
+        <h3 class="title">Research Assistant 2</h3>
         <p><strong>Institution:</strong> USC</p>
         <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
-    <!-- Connector -->
     <div class="connector"></div>
-    <!-- Add more cards and connectors as needed -->
-    <!-- Card 2 -->
     <div class="card right">
       <div class="info">
-        <h3 class="title">Research Assistant3</h3>
+        <h3 class="title">Research Assistant 3</h3>
         <p><strong>Institution:</strong> USC</p>
         <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
-    <!-- Connector -->
-    <div class="connector"></div>
-    <!-- Add more cards and connectors as needed -->
   </div>
 </div>
 
 <style>
 :root {
-  --background-color: white; /* Dirt skin background */
-  --highlight-color: #e9dcbe; /* Highlight color */
-  --text-color: #333; /* Text color */
-  --font-family: 'Barlow Condensed', sans-serif; /* Font family */
+  --background-color: white;
+  --highlight-color: #e9dcbe;
+  --text-color: #333;
+  --font-family: 'Barlow Condensed', sans-serif;
 }
 
 body, .single {
@@ -83,11 +76,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Timeline Container */
 .timeline {
   position: relative;
   width: 90%;
@@ -109,74 +97,4 @@ a:hover {
   background: var(--highlight-color);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  background: var(--text-color);
-  color: var(--background-color);
-}
-
-.card.left {
-  align-self: flex-start;
-  border-left: 3px solid var(--text-color);
-  margin-bottom: 30px;
-}
-
-.card.right {
-  align-self: flex-end;
-  border-right: 3px solid var(--text-color);
-  margin-bottom: 30px;
-}
-
-/* Zig-Zag Path */
-.connector {
-  position: relative;
-  width: 3px;
-  height: 50px;
-  background: var(--text-color);
-  margin-bottom: 30px;
-}
-
-.connector:before {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: var(--text-color);
-  border-radius: 50%;
-  top: -7px;
-  left: -6px;
-}
-
-.card.left + .connector {
-  align-self: flex-start;
-}
-
-.card.right + .connector {
-  align-self: flex-end;
-}
-
-.title {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .card {
-    width: 90%;
-  }
-
-  .card.left, .card.right {
-    align-self: center;
-    border: none;
-  }
-
-  .connector {
-    align-self: center;
-  }
-}
-</style>
+  transition: transform 0.3s ease, box-shadow 0.3
