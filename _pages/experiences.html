@@ -6,23 +6,53 @@ classes: wide
 
 <div class="timeline">
   <div class="outer">
+    <!-- Card 1 -->
     <div class="card left">
       <div class="info">
         <h3 class="title">Software Engineer Intern</h3>
         <p><strong>Company Name:</strong> XYZ Corporation</p>
         <p><strong>Duration:</strong> June 2023 - Aug 2023</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
+    <!-- Connector -->
+    <div class="connector"></div>
+    <!-- Card 2 -->
     <div class="card right">
       <div class="info">
         <h3 class="title">Research Assistant</h3>
-        <p><strong>Institution:</strong> University of Southern California</p>
+        <p><strong>Institution:</strong> USC</p>
         <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
-    <!-- Add more cards as needed -->
+    <!-- Connector -->
+    <div class="connector"></div>
+    <!-- Add more cards and connectors as needed -->
+    <!-- Card 2 -->
+    <div class="card right">
+      <div class="info">
+        <h3 class="title">Research Assistant2</h3>
+        <p><strong>Institution:</strong> USC</p>
+        <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <!-- Connector -->
+    <div class="connector"></div>
+    <!-- Add more cards and connectors as needed -->
+    <!-- Card 2 -->
+    <div class="card right">
+      <div class="info">
+        <h3 class="title">Research Assistant3</h3>
+        <p><strong>Institution:</strong> USC</p>
+        <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <!-- Connector -->
+    <div class="connector"></div>
+    <!-- Add more cards and connectors as needed -->
   </div>
 </div>
 
@@ -34,13 +64,27 @@ classes: wide
   --font-family: 'Barlow Condensed', sans-serif; /* Font family */
 }
 
-body {
-  background-color: var(--background-color);
+body, .single {
+  background-color: var(--background-color) !important;
+  color: var(--text-color);
   font-family: var(--font-family);
   font-size: 21px;
   line-height: 1.6;
-  margin: 20px;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--background-color) !important;
+  box-shadow: none !important;
+}
+
+a {
   color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Timeline Container */
@@ -55,6 +99,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .card {
@@ -74,71 +119,53 @@ body {
   color: var(--background-color);
 }
 
-/* Zig-Zag Alignment */
 .card.left {
   align-self: flex-start;
-  margin-left: 0;
-  margin-bottom: 30px;
   border-left: 3px solid var(--text-color);
+  margin-bottom: 30px;
 }
 
 .card.right {
   align-self: flex-end;
-  margin-right: 0;
-  margin-bottom: 30px;
   border-right: 3px solid var(--text-color);
+  margin-bottom: 30px;
 }
 
-/* Connector Line */
-.card.left::before, .card.right::before {
-  content: '';
-  position: absolute;
+/* Zig-Zag Path */
+.connector {
+  position: relative;
   width: 3px;
-  height: 100%;
+  height: 50px;
   background: var(--text-color);
+  margin-bottom: 30px;
 }
 
-.card.left::before {
-  left: -3px;
-  top: 0;
-}
-
-.card.right::before {
-  right: -3px;
-  top: 0;
-}
-
-/* Title Styling */
-.title {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.title::after {
+.connector:before {
   content: '';
   position: absolute;
   width: 15px;
   height: 15px;
   background: var(--text-color);
   border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: -7px;
+  left: -6px;
 }
 
-.card.left .title::after {
-  left: -35px;
+.card.left + .connector {
+  align-self: flex-start;
 }
 
-.card.right .title::after {
-  right: -35px;
+.card.right + .connector {
+  align-self: flex-end;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .timeline {
-    width: 100%;
-  }
-
   .card {
     width: 90%;
   }
@@ -148,14 +175,8 @@ body {
     border: none;
   }
 
-  .card.left::before, .card.right::before {
-    display: none;
-  }
-
-  .title::after {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+  .connector {
+    align-self: center;
   }
 }
 </style>
