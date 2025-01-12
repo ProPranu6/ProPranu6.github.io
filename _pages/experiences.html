@@ -6,7 +6,7 @@ classes: wide
 
 <div class="timeline">
   <div class="outer">
-    <div class="card">
+    <div class="card left">
       <div class="info">
         <h3 class="title">Software Engineer Intern</h3>
         <p><strong>Company Name:</strong> XYZ Corporation</p>
@@ -14,7 +14,7 @@ classes: wide
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
-    <div class="card">
+    <div class="card right">
       <div class="info">
         <h3 class="title">Research Assistant</h3>
         <p><strong>Institution:</strong> University of Southern California</p>
@@ -23,140 +23,139 @@ classes: wide
       </div>
     </div>
     <!-- Add more cards as needed -->
-    <div class="card">
-      <div class="info">
-        <h3 class="title">Research Assistant2</h3>
-        <p><strong>Institution:</strong> University of Southern California</p>
-        <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="info">
-        <h3 class="title">Research Assistant3</h3>
-        <p><strong>Institution:</strong> University of Southern California</p>
-        <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
   </div>
 </div>
 
 <style>
 :root {
-  --primary-color: #3c2f2f; /* Dirt skin's brownish background */
-  --background-color: #292221; /* Slightly darker shade */
-  --font: 'Georgia', serif; /* Matches Minimal Mistakes dirt skin */
-  --highlight-color: #f4a261; /* Accent highlight */
-  --text-color: #f4f4f4; /* Light text color */
+  --background-color: white; /* Dirt skin background */
+  --highlight-color: #e9dcbe; /* Highlight color */
+  --text-color: #333; /* Text color */
+  --font-family: 'Barlow Condensed', sans-serif; /* Font family */
 }
 
 body {
-  background: var(--background-color);
-  font-family: var(--font);
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  font-size: 21px;
+  line-height: 1.6;
+  margin: 20px;
   color: var(--text-color);
 }
 
 /* Timeline Container */
 .timeline {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.outer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  overflow-y: auto; /* Scrollable timeline */
-  max-height: 80vh; /* Limits the height */
-  padding: 20px;
-  margin: 0 auto;
-  border-left: 2px solid var(--highlight-color); /* Vertical timeline line */
-  scrollbar-width: thin; /* Custom scroll behavior */
-  scrollbar-color: var(--highlight-color) var(--background-color);
 }
 
-.timeline::-webkit-scrollbar {
-  width: 8px;
-}
-
-.timeline::-webkit-scrollbar-thumb {
-  background: var(--highlight-color);
-  border-radius: 10px;
-}
-
-.timeline::-webkit-scrollbar-track {
-  background: var(--background-color);
-}
-
-/* Card Container */
 .card {
   position: relative;
-  margin: 20px 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect: Highlight the card and pop it out */
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-
-/* Card Content */
-.info {
-  background: var(--primary-color);
+  width: 45%;
   padding: 15px;
+  background: var(--highlight-color);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect: Change the background and text color */
-.card:hover .info {
-  background: var(--highlight-color);
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background: var(--text-color);
   color: var(--background-color);
+}
+
+/* Zig-Zag Alignment */
+.card.left {
+  align-self: flex-start;
+  margin-left: 0;
+  margin-bottom: 30px;
+  border-left: 3px solid var(--text-color);
+}
+
+.card.right {
+  align-self: flex-end;
+  margin-right: 0;
+  margin-bottom: 30px;
+  border-right: 3px solid var(--text-color);
+}
+
+/* Connector Line */
+.card.left::before, .card.right::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: var(--text-color);
+}
+
+.card.left::before {
+  left: -3px;
+  top: 0;
+}
+
+.card.right::before {
+  right: -3px;
+  top: 0;
 }
 
 /* Title Styling */
 .title {
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin-bottom: 10px;
-  position: relative;
 }
 
-.title::before {
-  content: "";
+.title::after {
+  content: '';
   position: absolute;
-  width: 12px;
-  height: 12px;
-  background: var(--highlight-color);
+  width: 15px;
+  height: 15px;
+  background: var(--text-color);
   border-radius: 50%;
-  left: -30px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* Even Cards: Align Text and Dot to the Right */
-.card:nth-child(even) .info {
-  text-align: right;
+.card.left .title::after {
+  left: -35px;
 }
 
-.card:nth-child(even) .title::before {
-  left: auto;
-  right: -30px;
+.card.right .title::after {
+  right: -35px;
 }
 
-/* Responsive Adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
   .timeline {
-    padding: 10px;
+    width: 100%;
   }
 
   .card {
-    margin: 15px 0;
+    width: 90%;
   }
 
-  .title::before {
-    left: -20px;
+  .card.left, .card.right {
+    align-self: center;
+    border: none;
   }
 
-  .card:nth-child(even) .title::before {
-    right: -20px;
+  .card.left::before, .card.right::before {
+    display: none;
+  }
+
+  .title::after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 }
 </style>
