@@ -23,132 +23,140 @@ classes: wide
       </div>
     </div>
     <!-- Add more cards as needed -->
+    <div class="card">
+      <div class="info">
+        <h3 class="title">Research Assistant2</h3>
+        <p><strong>Institution:</strong> University of Southern California</p>
+        <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="info">
+        <h3 class="title">Research Assistant3</h3>
+        <p><strong>Institution:</strong> University of Southern California</p>
+        <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
   </div>
 </div>
 
 <style>
 :root {
-  --primary-color: #212121;
-  --background-color: #111;
-  --font: sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  --primary-color: #3c2f2f; /* Dirt skin's brownish background */
+  --background-color: #292221; /* Slightly darker shade */
+  --font: 'Georgia', serif; /* Matches Minimal Mistakes dirt skin */
+  --highlight-color: #f4a261; /* Accent highlight */
+  --text-color: #f4f4f4; /* Light text color */
 }
 
 body {
   background: var(--background-color);
   font-family: var(--font);
-  display: flex;
-  justify-content: center;
+  color: var(--text-color);
 }
 
 /* Timeline Container */
 .timeline {
-  background: var(--primary-color);
-  margin: 20px auto;
-  padding: 20px;
-}
-
-/* Card container */
-.card {
-  position: relative;
-  max-width: 400px;
-}
-
-/* Setting padding based on even or odd */
-.card:nth-child(odd) {
-  padding: 30px 0 30px 30px;
-}
-.card:nth-child(even) {
-  padding: 30px 30px 30px 0;
-}
-
-/* Global ::before */
-.card::before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  border: solid orangered;
-}
-
-/* Setting the border for odd cards */
-.card:nth-child(odd)::before {
-  left: 0;
-  top: -4.5px;
-  bottom: -4.5px;
-  border-width: 5px 0 5px 5px;
-  border-radius: 50px 0 0 50px;
-}
-
-/* Setting the border for even cards */
-.card:nth-child(even)::before {
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-width: 5px 5px 5px 0;
-  border-radius: 0 50px 50px 0;
-}
-
-/* Removing the border for the first card */
-.card:first-child::before {
-  border-top: 0;
-  border-top-left-radius: 0;
-}
-
-/* Removing the border for the last odd card */
-.card:last-child:nth-child(odd)::before {
-  border-bottom: 0;
-  border-bottom-left-radius: 0;
-}
-
-/* Removing the border for the last even card */
-.card:last-child:nth-child(even)::before {
-  border-bottom: 0;
-  border-bottom-right-radius: 0;
-}
-
-/* Information about the timeline */
-.info {
   display: flex;
   flex-direction: column;
-  background: #333;
-  color: gray;
-  border-radius: 10px;
-  padding: 10px;
+  overflow-y: auto; /* Scrollable timeline */
+  max-height: 80vh; /* Limits the height */
+  padding: 20px;
+  margin: 0 auto;
+  border-left: 2px solid var(--highlight-color); /* Vertical timeline line */
+  scrollbar-width: thin; /* Custom scroll behavior */
+  scrollbar-color: var(--highlight-color) var(--background-color);
 }
 
-/* Title of the card */
+.timeline::-webkit-scrollbar {
+  width: 8px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: var(--highlight-color);
+  border-radius: 10px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+/* Card Container */
+.card {
+  position: relative;
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect: Highlight the card and pop it out */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* Card Content */
+.info {
+  background: var(--primary-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect: Change the background and text color */
+.card:hover .info {
+  background: var(--highlight-color);
+  color: var(--background-color);
+}
+
+/* Title Styling */
 .title {
-  color: orangered;
+  font-size: 1.25em;
+  margin-bottom: 10px;
   position: relative;
 }
 
-/* Timeline dot */
 .title::before {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 999px;
-  border: 3px solid orangered;
+  width: 12px;
+  height: 12px;
+  background: var(--highlight-color);
+  border-radius: 50%;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* Text alignment for even cards */
-.card:nth-child(even) > .info > .title {
+/* Even Cards: Align Text and Dot to the Right */
+.card:nth-child(even) .info {
   text-align: right;
 }
 
-/* Dot alignment for odd cards */
-.card:nth-child(odd) > .info > .title::before {
-  left: -45px;
+.card:nth-child(even) .title::before {
+  left: auto;
+  right: -30px;
 }
 
-/* Dot alignment for even cards */
-.card:nth-child(even) > .info > .title::before {
-  right: -45px;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .timeline {
+    padding: 10px;
+  }
+
+  .card {
+    margin: 15px 0;
+  }
+
+  .title::before {
+    left: -20px;
+  }
+
+  .card:nth-child(even) .title::before {
+    right: -20px;
+  }
 }
 </style>
