@@ -3,65 +3,36 @@ permalink: /experiences/
 layout: single
 classes: wide
 ---
-
 <div class="timeline">
   <div class="outer">
     <!-- Card 1 -->
     <div class="card left">
       <div class="info">
         <h3 class="title">Software Engineer Intern</h3>
-        <p><strong>Company Name:</strong> XYZ Corporation</p>
-        <p><strong>Duration:</strong> June 2023 - Aug 2023</p>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="company">Tech Corp</p>
+        <p class="duration">May 2022 - Aug 2022</p>
+        <p class="description">Worked on developing scalable web applications.</p>
       </div>
     </div>
-    <!-- Connector -->
     <div class="connector"></div>
     <!-- Card 2 -->
     <div class="card right">
       <div class="info">
         <h3 class="title">Research Assistant</h3>
-        <p><strong>Institution:</strong> USC</p>
-        <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="company">University Lab</p>
+        <p class="duration">Jan 2023 - Dec 2023</p>
+        <p class="description">Conducted research on machine learning algorithms.</p>
       </div>
     </div>
-    <!-- Connector -->
-    <div class="connector"></div>
-    <!-- Add more cards and connectors as needed -->
-    <!-- Card 2 -->
-    <div class="card left">
-      <div class="info">
-        <h3 class="title">Research Assistant2</h3>
-        <p><strong>Institution:</strong> USC</p>
-        <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-    <!-- Connector -->
-    <div class="connector"></div>
-    <!-- Add more cards and connectors as needed -->
-    <!-- Card 2 -->
-    <div class="card right">
-      <div class="info">
-        <h3 class="title">Research Assistant3</h3>
-        <p><strong>Institution:</strong> USC</p>
-        <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-    <!-- Connector -->
-    <div class="connector"></div>
-    <!-- Add more cards and connectors as needed -->
   </div>
 </div>
 
 <style>
 :root {
-  --background-color: white; /* Background */
-  --highlight-color: #e9dcbe; /* Highlight color */
-  --text-color: #333; /* Text color */
-  --font-family: 'Barlow Condensed', sans-serif; /* Font family */
+  --background-color: white;
+  --highlight-color: #e9dcbe;
+  --text-color: #333;
+  --font-family: 'Barlow Condensed', sans-serif;
 }
 
 body, .single {
@@ -73,21 +44,6 @@ body, .single {
   margin: 0;
 }
 
-nav {
-  background-color: var(--background-color) !important;
-  box-shadow: none !important;
-}
-
-a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Timeline Container */
 .timeline {
   position: relative;
   width: 90%;
@@ -102,7 +58,6 @@ a:hover {
   align-items: center;
 }
 
-/* Cards */
 .card {
   position: relative;
   width: 45%;
@@ -114,11 +69,16 @@ a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  background: var(--text-color);
-  color: var(--background-color);
+.card .title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card .company, 
+.card .duration {
+  font-size: 1em;
+  color: var(--text-color);
+  margin-bottom: 5px;
 }
 
 .card .description {
@@ -127,9 +87,22 @@ a:hover {
   transition: opacity 0.3s ease;
 }
 
+.card:hover .company,
+.card:hover .duration {
+  display: none;
+  opacity: 0;
+}
+
 .card:hover .description {
   display: block;
   opacity: 1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background: var(--text-color);
+  color: var(--background-color);
 }
 
 .card.left {
@@ -144,7 +117,7 @@ a:hover {
   margin-bottom: 30px;
 }
 
-/* Zig-Zag Path */
+/* Connector */
 .connector {
   position: relative;
   width: 3px;
@@ -164,15 +137,6 @@ a:hover {
   left: -6px;
 }
 
-.card.left + .connector {
-  align-self: flex-start;
-}
-
-.card.right + .connector {
-  align-self: flex-end;
-}
-
-/* Continuous Zig-Zag Path */
 .connector:after {
   content: '';
   position: absolute;
@@ -189,12 +153,6 @@ a:hover {
   left: -50px;
 }
 
-.title {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .card {
     width: 90%;
