@@ -34,31 +34,32 @@ permalink:
         }
 
         a {
-            font-size: 24px; /* Highlighted term font size */
-            font-weight: bold;
-            color: #0056b3;
-            text-decoration: none;
-            position: relative;
-            display: inline-block;
-        }
+    font-size: 24px; /* Font size for the anchor text */
+    font-weight: bold; /* Bold font */
+    color: #0056b3; /* Blue text color */
+    text-decoration: none; /* No default underline */
+    position: relative; /* Enables pseudo-element positioning */
+    display: inline-block; /* Ensures proper positioning of pseudo-element */
+}
 
-        a::before {
-            content: '';
-            position: absolute;
-            bottom: -3px;
-            left: 50%;
-            width: 0;
-            height: 3px;
-            background-color: gold;
-            transition: all 0.3s ease-in-out;
-            transform: translateX(-50%);
-        }
+a::before {
+    content: ''; /* Creates a pseudo-element for the underline */
+    position: absolute; /* Positions relative to the anchor */
+    bottom: -3px; /* Places underline slightly below the text */
+    left: 50%; /* Start underline from the center */
+    width: 0; /* Initial width of the underline */
+    height: 3px; /* Thickness of the underline */
+    background-color: gold; /* Golden color for the underline */
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+    transform: translateX(-50%); /* Center aligns the underline */
+}
 
-        a:hover::before {
-            width: 100%;
-            left: 0;
-            transform: translateX(0);
-        }
+a:hover::before {
+    width: 100%; /* Expands underline to full width on hover */
+    left: 0; /* Resets position for smooth animation */
+    transform: translateX(0); /* Aligns underline properly */
+}
+
     </style>
 </head>
 <body>
