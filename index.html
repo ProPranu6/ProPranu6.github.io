@@ -37,7 +37,7 @@ permalink:
     font-size: 24px; /* Font size for the anchor text */
     font-weight: bold; /* Bold font */
     color: #0056b3; /* Blue text color */
-    text-decoration: none; /* Removes default underline */
+    text-decoration: none !important; /* Removes default underline */
     position: relative; /* Enables pseudo-element positioning */
     display: inline-block; /* Ensures proper positioning of pseudo-element */
 }
@@ -52,19 +52,19 @@ permalink:
     background-color: gold; /* Golden color for the underline */
     transition: all 0.3s ease-in-out; /* Smooth transition effect */
     transform: translateX(-50%); /* Center aligns the underline */
-  text-decoration: none;
+  
 }
 
 .aboutme a:hover {
     color: #0056b3; /* Ensures text remains blue on hover */
-    text-decoration: none; /* Removes any default underline on hover */
+    text-decoration: none !important; /* Removes any default underline on hover */
 }
 
 .aboutme a:hover::before {
     width: 100%; /* Expands underline to full width on hover */
     left: 0; /* Resets position for smooth animation */
     transform: translateX(0); /* Aligns underline properly */
-  text-decoration: none;
+
 }
 
 
