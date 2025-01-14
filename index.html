@@ -33,7 +33,7 @@ permalink:
             margin-bottom: 15px;
         }
 
-      a {
+      #aboutme a {
     font-size: 24px; /* Font size for the anchor text */
     font-weight: bold; /* Bold font */
     color: #0056b3; /* Blue text color */
@@ -42,7 +42,7 @@ permalink:
     display: inline-block; /* Ensures proper positioning of pseudo-element */
 }
 
-a::before {
+#aboutme a::before {
     content: ''; /* Creates a pseudo-element for the underline */
     position: absolute; /* Positions relative to the anchor */
     bottom: -3px; /* Places underline slightly below the text */
@@ -54,12 +54,12 @@ a::before {
     transform: translateX(-50%); /* Center aligns the underline */
 }
 
-a:hover {
+#aboutme a:hover {
     color: #0056b3; /* Ensures text remains blue on hover */
     text-decoration: none; /* Removes any default underline on hover */
 }
 
-a:hover::before {
+#aboutme a:hover::before {
     width: 100%; /* Expands underline to full width on hover */
     left: 0; /* Resets position for smooth animation */
     transform: translateX(0); /* Aligns underline properly */
