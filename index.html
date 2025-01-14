@@ -33,11 +33,11 @@ permalink:
             margin-bottom: 15px;
         }
 
-        a {
+      a {
     font-size: 24px; /* Font size for the anchor text */
     font-weight: bold; /* Bold font */
     color: #0056b3; /* Blue text color */
-    text-decoration: none; /* No default underline */
+    text-decoration: none; /* Removes default underline */
     position: relative; /* Enables pseudo-element positioning */
     display: inline-block; /* Ensures proper positioning of pseudo-element */
 }
@@ -54,11 +54,17 @@ a::before {
     transform: translateX(-50%); /* Center aligns the underline */
 }
 
+a:hover {
+    color: #0056b3; /* Ensures text remains blue on hover */
+    text-decoration: none; /* Removes any default underline on hover */
+}
+
 a:hover::before {
     width: 100%; /* Expands underline to full width on hover */
     left: 0; /* Resets position for smooth animation */
     transform: translateX(0); /* Aligns underline properly */
 }
+
 
     </style>
 </head>
