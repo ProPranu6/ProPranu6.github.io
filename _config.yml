@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Venkata Saai Praneeth Thota"
   avatar : "/assets/images/biopic.jpg"
-  bio    : "BTech and MSc in Computer Science with publications in IEEE journals, showcasing 4+ years of AI research experience. Proven track record of driving innovation as an AI/ML engineer at two dynamic startups."
+  bio    : "Bachelors and Masters degree in Computer Science with publications in IEEE journals, showcasing 4+ years of AI research experience. Proven track record of driving innovation as an AI/ML engineer at two dynamic startups."
   links:
     - label: "Los Angeles, CA"
       icon: "fas fa-fw fa-map-marker-alt"
